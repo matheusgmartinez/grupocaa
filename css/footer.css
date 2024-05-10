@@ -1,0 +1,28 @@
+footer {
+    background-color: #000;
+    font-family: 'Varela Round';
+    font-size: 13px;
+}
+
+.left-content {
+    color: #fff;
+    display: flex;
+}
+
+.right-content {
+    color: #676767;
+}
+
+.social-icons {
+    display: flex;
+    gap: 12px;
+}
+
+a {
+    color: #676767;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #676767;
+}
