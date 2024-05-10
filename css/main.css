@@ -4,6 +4,10 @@ footer {
     font-size: 13px;
 }
 
+.footer-content {
+    display: flex;
+}
+
 .left-content {
     color: #fff;
     display: flex;
