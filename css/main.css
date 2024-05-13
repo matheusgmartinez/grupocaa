@@ -7,11 +7,6 @@ p {
     padding: 0;
 }
 
-footer {
-    background-color: #000;
-    font-size: 13px;
-}
-
 .footer-content {
     display: flex;
     height: 730px;
