@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
             const headerText = document.querySelector('#header-text');
             headerText.innerText = 'Varejo';
             const image = document.getElementById('header');
-            image.style.backgroundImage = `url(../images/varejo.png)`
+            image.style.backgroundImage = `url(../images/varejo-main-banner.jpeg)`
         });
 
     fetch('default/footer.html')
