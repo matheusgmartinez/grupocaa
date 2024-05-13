@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 const images = [
-    '../images/home-main-banner1.png',
+    '../images/home-main-banner1.jpeg',
     '../images/home-main-banner2.png',
     '../images/home-main-banner3.png'
 ];
