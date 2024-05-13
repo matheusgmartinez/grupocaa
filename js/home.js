@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
             const headerText = document.querySelector('#header-text');
             headerText.innerText = 'Especialistas em negócios e plataformas de tecnologia de CX';
-
+            document.getElementById("header-buttons").style.display = "flex";
             changeImage();
         });
 
@@ -15,12 +15,14 @@ document.addEventListener('DOMContentLoaded', function () {
         .then(data => {
             document.querySelector('footer').innerHTML = data;
         });
+
+    document.querySelector(".icon-circle").style.padding = "20.5px 25px";
 });
 
 const images = [
     '../images/home-main-banner1.jpeg',
-    '../images/home-main-banner2.png',
-    '../images/home-main-banner3.png'
+    '../images/home-main-banner2.jpeg',
+    '../images/home-main-banner3.jpeg'
 ];
 
 const texts = [
@@ -50,7 +52,7 @@ function changeImage() {
     const button = document.getElementById('header-buttons');
     button.innerText = buttons[index];
     button.setAttribute('href', links[index]);
-    
+
     index = (index + 1) % images.length;
 
     if (buttons[index] === 'entenda mais') {

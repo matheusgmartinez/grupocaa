@@ -8,8 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
             headerText.innerText = 'Contato';
             const image = document.getElementById('header');
             image.style.backgroundImage = `url(../images/contato-main-banner.jpeg)`
-
-            changeImage();
+            document.getElementById("header-buttons").style.display = "none";
         });
 
     fetch('default/footer.html')

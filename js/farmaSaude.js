@@ -7,7 +7,8 @@ document.addEventListener('DOMContentLoaded', function () {
             const headerText = document.querySelector('#header-text');
             headerText.innerText = 'Farma & Saúde';
             const image = document.getElementById('header');
-            image.style.backgroundImage = `url(../images/varejo.png)`
+            image.style.backgroundImage = `url(../images/farma-saude-main-banner.jpeg)`
+            document.getElementById("header-buttons").style.display = "none";
         });
 
     fetch('default/footer.html')

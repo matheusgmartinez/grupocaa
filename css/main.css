@@ -146,7 +146,6 @@ header a:hover {
     border-radius: 25px;
     width: 174px;
     height: 50px;
-    display: flex;
     align-items: center;
     justify-content: center;
     position: absolute;

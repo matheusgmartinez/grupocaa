@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
             headerText.innerText = 'O mercado de Doces';
             const image = document.getElementById('header');
             image.style.backgroundImage = `url(../images/varejo.png)`
+            document.getElementById("header-buttons").style.display = "none";
         });
 
     fetch('default/footer.html')

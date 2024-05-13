@@ -7,7 +7,8 @@ document.addEventListener('DOMContentLoaded', function () {
             const headerText = document.querySelector('#header-text');
             headerText.innerText = 'Transportes';
             const image = document.getElementById('header');
-            image.style.backgroundImage = `url(../images/varejo.png)`
+            image.style.backgroundImage = `url(../images/transportes-main-banner.jpeg)`
+            document.getElementById("header-buttons").style.display = "none";
         });
 
     fetch('default/footer.html')

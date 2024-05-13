@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
             headerText.innerText = 'Varejo';
             const image = document.getElementById('header');
             image.style.backgroundImage = `url(../images/varejo-main-banner.jpeg)`
+            document.getElementById("header-buttons").style.display = "none";
         });
 
     fetch('default/footer.html')
