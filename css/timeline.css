@@ -10,8 +10,12 @@ hr {
     opacity: 1;
 }
 
+#header-buttons {
+    display: none;
+}
+
 #header {
-    height: 200px;
+    height: auto;
 }
 
 .timeline {
