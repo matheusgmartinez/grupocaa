@@ -1,5 +1,14 @@
-body {
-    font-family: 'Varela Round';
+@font-face {
+    font-family: 'Varela';
+    src: url('../fonts/VarelaRound-Regular.ttf');
+}
+
+* { 
+    font-family: Varela;
+}
+
+.font-varela { 
+    font-family: Varela;
 }
 
 p {
@@ -197,11 +206,12 @@ button.navbar-toggler {
 .background {
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 25px;
-    width: 140px;
+    width: 150px;
     height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 
 .dropdown-content {
