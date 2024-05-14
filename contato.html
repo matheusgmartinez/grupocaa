@@ -16,7 +16,122 @@
 <body>
     <header id="header"></header>
 
-    <main></main>
+    <main>
+        <div class="container-fluid container-xl contact-session">
+            <div class="row h-100 contact-mobile-class">
+                <div class="col-xl-4 d-flex flex-column align-items-center contact-col">
+                    <div class="d-flex align-items-center mb-5 w-100">
+                        <div class="our-emails d-flex align-items-center justify-content-center">
+                            <div class="email-icon"></div>
+                        </div>
+                        <div class="px-3">
+                            <p class="text-uppercase"> Nossos emails</p>
+                            <p class="m-0">contato@grupocaa.com.br</p>
+                            <p class="m-0">comercial@grupocaa.com.br</p>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center mb-5 w-100">
+                        <div class="our-tel d-flex align-items-center justify-content-center">
+                            <div class="tel-icon"></div>
+                        </div>
+                        <div class="px-3">
+                            <p class="text-uppercase"> Nosso Telefone</p>
+                            <p class="m-0">(11) 3061-3120</p>
+                            <p class="m-0"></p>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center w-100">
+                        <div class="d-flex align-items-center justify-content-center">
+                            <div class="location-icon"></div>
+                        </div>
+                        <div class="px-3">
+                            <p class="text-uppercase"> Nossa Localização</p>
+                            <p class="m-0">Av. Angélica, 2491 - Higienópolis/SP</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-8 form-col px-5">
+                    <div>
+                        <h3 class="font-weight-normal contact-form-title mb-5">
+                            Preencha o formulário e entraremos em contato
+                        </h3>
+                    </div>
+                    <form class="contact-form" method="post" action="contato.php"  novalidate>
+                        <div class="form-row">
+                            <div class="form-group required">
+                                <input  
+                                required
+                                id="firstName" 
+                                type="text" 
+                                name="firstName"
+                                >
+                                <label for="firstName">Nome</label>
+                            </div>
+                            <div class="form-group required">
+                                <input  
+                                required
+                                id="lastName" 
+                                type="text" 
+                                name="lastName"
+                                >
+                                <label for="lastName">Sobrenome</label>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group required">
+                                <input  
+                                required
+                                id="subject" 
+                                type="text" 
+                                name="subject"
+                                >
+                                <label for="subject">Assunto</label>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group required">
+                                <input  
+                                required
+                                id="companyName" 
+                                type="text" 
+                                name="companyName"
+                                >
+                                <label for="companyName">Nome da empresa</label>
+                            </div>
+                            <div class="form-group required">
+                                <input  
+                                required
+                                id="email" 
+                                type="text" 
+                                name="email"
+                                >
+                                <label for="email">Email</label>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input  
+                                id="message" 
+                                type="text" 
+                                name="message"
+                                required
+                                >
+                                <label for="message">Mensagem</label>
+                            </div>
+                        </div>
+        
+                        <div class="d-flex justify-content-end">
+                            <button
+                                class="submit-contact-form font-varela"
+                                type="submit">
+                                Vamos conversar?
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
     
     <footer></footer>
 
@@ -28,6 +143,7 @@
     crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/contato.js"></script>
+    <script src="js/contactForm.js"></script>
 
 </body>
 
