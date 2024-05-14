@@ -93,22 +93,31 @@ hr {
     display: none;
 }
 
-.timeline-help {
+.help-redirect {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 220px 0;
     background-color: #000;
-    color: #fff;
-    padding-top: 2em;
-    height: 400px;
 }
 
-.timeline-help h2, h3 {
-    margin: 0;
-    text-align: center;
-    padding-top: 1em;
+.help-redirect span {
+    font-size: 45px;
+    color: #BDBDBD;
+    line-height: 24px;
 }
 
-.timeline-help a {
+.help-redirect a {
+    font-size: 68px;
+    color: #6D6D6D;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+.help-redirect a:hover {
     color: #6D6D6D;
 }
+
 
 @media (max-width: 991px) {
     .timeline-section {

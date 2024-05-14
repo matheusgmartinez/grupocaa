@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
             const headerText = document.querySelector('#header-text');
             headerText.innerText = 'Especialistas em negócios e plataformas de tecnologia de CX';
             document.getElementById("header-buttons").style.display = "flex";
+
             changeImage();
         });
 
@@ -63,3 +64,16 @@ function changeImage() {
 }
 
 setInterval(changeImage, 5000);
+
+// Fechar o dropdown ao clicar fora dele
+window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        for (var i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.style.display === 'block') {
+                openDropdown.style.display = 'none';
+            }
+        }
+    }
+}
