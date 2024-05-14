@@ -5,6 +5,47 @@ document.addEventListener('DOMContentLoaded', function () {
             document.querySelector('header').innerHTML = data;
 
             document.getElementById("header-buttons").style.display = "none";
+
+            const closeMenu = document.querySelector('.close-menu');
+            const linksHeader = document.querySelector('.links-header');
+            const toggleNavbar = document.getElementById('navbarToggle');
+            document.getElementById('shade').style.display = "none";
+
+            toggleNavbar.addEventListener('click', function () {
+                document.getElementById('shade').style.display = "block";
+            });
+
+            closeMenu.addEventListener('click', function () {
+                linksHeader.classList.remove('show');
+                document.getElementById('shade').style.display = "none";
+            });
+
+            // collapse header
+            const collapseBtn = document.getElementById('collapseBtn');
+            const collapseContent = document.getElementById('collapseContent');
+            const setaImg = document.getElementById('setaImg');
+
+            collapseBtn.addEventListener('click', function () {
+                collapseContent.classList.toggle('show');
+                collapseBtn.classList.toggle('collapsed');
+
+                if (setaImg.getAttribute('src') === '../images/seta-on.png') {
+                    setaImg.setAttribute('src', '../images/seta-off.png');
+                } else {
+                    setaImg.setAttribute('src', '../images/seta-on.png');
+                }
+            });
+
+            document.addEventListener('click', function (event) {
+                if (!event.target.closest('.custom-collapse')) {
+                    collapseContent.classList.remove('show');
+                    collapseBtn.classList.remove('collapsed');
+
+                    if (setaImg.getAttribute('src') === '../images/seta-off.png') {
+                        setaImg.setAttribute('src', '../images/seta-on.png');
+                    }
+                }
+            });
         });
 
     fetch('default/footer.html')
@@ -13,17 +54,3 @@ document.addEventListener('DOMContentLoaded', function () {
             document.querySelector('footer').innerHTML = data;
         });
 });
-
-
-// Fechar o dropdown ao clicar fora dele
-window.onclick = function(event) {
-    if (!event.target.matches('.dropbtn')) {
-        var dropdowns = document.getElementsByClassName("dropdown-content");
-        for (var i = 0; i < dropdowns.length; i++) {
-            var openDropdown = dropdowns[i];
-            if (openDropdown.style.display === 'block') {
-                openDropdown.style.display = 'none';
-            }
-        }
-    }
-}

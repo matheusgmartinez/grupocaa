@@ -1,21 +1,29 @@
 <nav class="container navbar navbar-expand-lg">
-        <a class="navbar-brand" href="../index.html"><img src="../images/logo-caa.png" alt="logo caa" /></a>
+    <a class="navbar-brand" href="../index.html"><img src="../images/logo-caa.png" alt="logo caa" /></a>
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
-            aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" id="navbarToggle">
+        <span class="navbar-toggler-icon"></span>
+    </button>
 
-        <div class="links-header collapse navbar-collapse" id="navbarNav">
+    <div class="links-header navbar-collapse collapse" id="navbarNav">
+
+        <div class="mobile-menu">
+
+            <div class="nav-mobile-header">
+                <img src="../images/logo-caa-white.png" alt="">
+                <span class="close-menu">x</span>
+            </div>
+
             <div class="background">
                 <a href="../index.html#whatWeDo-content" id="whatWeDo">O que fazemos</a>
             </div>
 
-            <div class="background">
+            <div class="background d-none d-lg-flex">
                 <div class="dropdown">
-                    <button class="dropbtn">
+                    <button class="dropbtn" id="dropdownBtn">
                         Cases
-                        <img id="seta-img" class="icon-seta" src="../images/seta-off.png" alt="">
+                        <img id="setaDropdown" class="icon-seta" src="../images/seta-off.png" alt="">
                     </button>
                     <div class="dropdown-content">
                         <div>
@@ -37,18 +45,60 @@
                 </div>
             </div>
 
+            <div class="collapse-mobile d-flex d-lg-none">
+                <div class="background">
+                    <div class="custom-collapse ">
+                        <button class="custom-collapsebtn" id="collapseBtn">
+                            Cases
+                            <img id="setaImg" class="icon-seta seta-collapse" src="../images/seta-on.png" alt="">
+                        </button>
+                    </div>
+                </div>
+                <div class="custom-collapse-content" id="collapseContent">
+                    <div class="collapse-first">
+                        <a href="../varejo.html">Varejo</a>
+                        <a href="../financas.html">Finanças</a>
+                        <a href="../modaBeleza.html">Moda & Beleza</a>
+                        <a href="../manufatura.html">Manufatura</a>
+                        <a href="../automotivo.html">Automotivo</a>
+                        <a href="../turismoViagem.html">Turismo & Viagem</a>
+                        <a href="../farmaSaude.html">Farma & Saúde</a>
+                        <a href="../transportes.html">Transportes</a>
+                    </div>
+                    <div class="custom-hr-dropdown"></div>
+                    <div class="collapse-second">
+                        <span>Como vender através do CRM</span>
+                        <a href="../mercadoDoces.html">O mercado de doces</a>
+                    </div>
+                </div>
+            </div>
+
+
             <div class="background">
                 <a href="../timeline.html">Linha do tempo</a>
             </div>
             <div class="background">
                 <a href="#footer-companys" id="companys">Empresas do Grupo</a>
             </div>
+
+            <a class="d-none d-lg-flex" href="../contato.html">
+                <div class="contato-button">
+                    Contato
+                </div>
+            </a>
+
+            <div class="background d-flex d-lg-none">
                 <a href="../contato.html">
                     <div class="contato-button">
                         Contato
                     </div>
                 </a>
+            </div>
+
         </div>
+
+    </div>
+    <div class="mobile-menu-shade" id="shade"></div>
 </nav>
 
 <div id="header-text"></div>

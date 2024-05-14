@@ -97,6 +97,10 @@
     margin-bottom: 80px;
 }
 
+.organic-content {
+    margin-top: 80px;
+}
+
 .organic-icon {
     display: flex;
     justify-content: space-between;
@@ -199,6 +203,10 @@
 @media (max-width: 991px) {
     .organic-icon {
         justify-content: normal; 
+    }
+
+    .organic-content {
+        margin-top: 40px;
     }
 
     .organic-right {
