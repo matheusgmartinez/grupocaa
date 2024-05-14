@@ -35,7 +35,6 @@ hr {
 .timeline-elements {
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
 .timeline-element {
@@ -63,17 +62,9 @@ hr {
     color: #AFAFAF;
 }
 
-.element-title-active {
-    color: #fff;
-}
-
 .element-description {
     font-size: 14px;
     color: #AFAFAF;
-}
-
-.element-description-active {
-    color: #fff;
 }
 
 .timeline-year {
@@ -82,11 +73,6 @@ hr {
     width: 14.2%;
     font-weight: 400;
     font-size: 40px;
-}
-
-.timeline-year-active {
-    color: #fff;
-    font-size: 80px;
 }
 
 .mobile-elements {
@@ -163,5 +149,10 @@ hr {
 
     .timeline-help {
         height: auto;
+    }
+
+    .help-redirect a {
+        font-size: 45px;
+        text-align: center;
     }
 }
