@@ -327,4 +327,14 @@ header a:hover {
     .navbar {
         padding: 1em;
     }
+
+    .dropdown-content {
+       min-width: auto;
+       flex-direction: column;
+        width: 60vw;
+    }
+
+    .hr-dropdown {
+        display: none;
+    }
 }
