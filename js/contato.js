@@ -9,12 +9,21 @@ document.addEventListener('DOMContentLoaded', function () {
             const image = document.getElementById('header');
             image.style.backgroundImage = `url(../images/contato-main-banner.jpeg)`
             document.getElementById("header-buttons").style.display = "none";
+
         });
 
     fetch('default/footer.html')
         .then(response => response.text())
         .then(data => {
             document.querySelector('footer').innerHTML = data;
+        });
+    fetch('components/contact-form.html')
+        .then(response => response.text())
+        .then(data => {
+            document.querySelector('main').innerHTML = data;
+            var script = document.createElement('script')
+            script.src = '../js/contactForm.js'
+            document.querySelector('body').appendChild(script)
         });
 });
 
