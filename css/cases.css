@@ -217,6 +217,10 @@
         font-size: 32px;
     }
 
+    .help-redirect {
+        margin: 140px 0;
+    }
+
     .cases-content h1 { 
         font-size: 24px;
     }
@@ -279,9 +283,5 @@
     .next-button {
         width: 46px;
         height: 46px;
-    }
-    
-    .help-redirect {
-        margin: 140px 0;
     }
 }
