@@ -8,6 +8,10 @@
     gap: 40px;
 }
 
+.error {
+    border: 1px solid red;
+}
+
 .form-col{ 
     background-color: #F3F3F3;
     padding-top: 100px;
@@ -25,6 +29,24 @@
     background-color: transparent;
     width: 100%;
 }
+
+.success-message {
+    position: absolute;
+    top: 138px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    background-color: green;
+    width: auto;
+    padding: 0 25px;
+    min-height: 50px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+}
+
 .contact-form label { 
     position: absolute;
     left: 0;

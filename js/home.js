@@ -80,8 +80,8 @@ const buttons = [
 ];
 
 const links = [
-    '../varejo.html',
-    '../varejo.html',
+    '../contato.html',
+    '../contato.html',
     '../contato.html'
 ];
 
