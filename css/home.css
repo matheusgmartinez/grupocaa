@@ -25,6 +25,7 @@
     display: flex;
     max-width: 730px;
     flex-direction: column;
+    margin-right: 15%;
 }
 
 .text-content h1 {
@@ -35,6 +36,7 @@
 .title-images {
     margin-top: 50px;
     margin-bottom: 42px;
+    margin-left: 5%;
 }
 
 .title-images p {
@@ -65,6 +67,7 @@
 .image-block img {
     width: 100%;
     object-fit: cover;
+    background-color: #000;
 }
 
 .text-img {
@@ -103,6 +106,7 @@
 .organic-icon {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     gap: 16px;
 }
 
@@ -204,6 +208,21 @@
         justify-content: normal; 
     }
 
+    .organic-left p {
+        font-size: 18px;
+    }
+
+    .organic-content h1 img {
+        height: 18px;
+        margin-top: 4px;
+    }
+
+    .organic-content h1 {
+        font-size: 40px;
+        line-height: 40px;
+        gap: 2px;
+    }
+
     .organic-content {
         margin-top: 40px;
     }
@@ -214,7 +233,16 @@
     }
 
     .organic-text {
-        margin-top: 30px;
+        margin-top: 24px;
+    }
+
+    .icon-circle img {
+        height: 30px;
+    }
+
+    .icon-circle {
+        padding: 18px 18px;
+        height: fit-content;
     }
 
     .title-images p {
@@ -240,11 +268,6 @@
         font-size: 24px;
     }
 
-    .organic-content h1 img {
-        height: 22px;
-        margin-top: 12px;
-    }
-
     .text-img {
         font-size: 16px;
         bottom: 24px;
@@ -258,4 +281,10 @@
     .title-images {
         margin-bottom: 24px;
     }
+}
+
+@media (max-width: 576px) {
+    .title-images {
+        margin-left: 0;
+    }  
 }

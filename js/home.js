@@ -58,7 +58,11 @@ document.addEventListener('DOMContentLoaded', function () {
             document.querySelector('footer').innerHTML = data;
         });
 
-    document.querySelector(".icon-circle").style.padding = "20.5px 25px";
+    if (window.innerWidth > 991) {
+        document.querySelector(".icon-circle").style.padding = "20.5px 25px";
+    } else {
+        document.querySelector(".icon-circle").style.padding = "18px 22px";
+    }
 });
 
 const images = [
@@ -98,9 +102,17 @@ function changeImage() {
     index = (index + 1) % images.length;
 
     if (buttons[index] === 'entenda mais') {
-        document.getElementById('header-buttons').style.top = '60%';
+        if (window.innerWidth > 1600) {
+            document.getElementById('header-buttons').style.top = '56%';
+        } else {
+            document.getElementById('header-buttons').style.top = '60%';
+        }
     } else {
-        document.getElementById('header-buttons').style.top = '65%';
+        if (window.innerWidth > 1600) {
+            document.getElementById('header-buttons').style.top = '61%';
+        } else {
+            document.getElementById('header-buttons').style.top = '65%';
+        }
     }
 }
 

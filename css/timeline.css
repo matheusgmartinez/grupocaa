@@ -15,7 +15,7 @@ hr {
 }
 
 #header {
-    height: auto;
+    height: 250px;
 }
 
 .timeline {
@@ -108,6 +108,10 @@ hr {
 @media (max-width: 991px) {
     .timeline-section {
         height: 100%;
+    }
+
+    #header {
+        height: 150px;
     }
 
     .timeline-elements {
